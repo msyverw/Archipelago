@@ -84,6 +84,12 @@ class FeldsparViaDBSurface(Toggle):
     """
     display_name = "Feldspar via DB Surface"
 
+class ForgeViaParkour(Toggle):
+    """
+    There is a method to access the Black Hole Forge by riding it to the ceiling. This option allows for toggling this as a valid "In Logic" path
+    """
+    display_name = "Forge via Parkour"
+
 class ShuffleSpacesuit(Toggle):
     """
     Puts the spacesuit into the Archipelago item pool, forcing you to play suitless until it's found.
@@ -267,6 +273,7 @@ class OuterWildsGameOptions(PerGameCommonOptions):
     death_link: DeathLink
     logsanity: Logsanity
     feldspar_via_db_surface: FeldsparViaDBSurface
+    forge_via_parkour: ForgeViaParkour
     shuffle_spacesuit: ShuffleSpacesuit
     split_translator: SplitTranslator
     enable_hn1_mod: EnableHearthsNeighborMod
@@ -282,6 +289,8 @@ def get_creation_settings(options: OuterWildsGameOptions) -> Set[str]:
         relevant_settings.add("logsanity")
     if options.feldspar_via_db_surface.value == 1:
         relevant_settings.add("feldspar_via_db_surface")
+    if options.forge_via_parkour.value == 1:
+        relevant_settings.add("forge_via_parkour")
     if options.enable_eote_dlc.value == 1:
         relevant_settings.add("enable_eote_dlc")
     return relevant_settings

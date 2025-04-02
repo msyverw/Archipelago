@@ -36,6 +36,11 @@
     { "from": "Hanging City Ceiling", "to": "Forge via Ship & Warps", "requires": [ { "item": "Launch Codes" } ] },
     { "from": "Forge via Ship & Warps", "to": "Black Hole Forge", "requires": [] },
     { "from": "Hanging City Ceiling", "to": "Forge via Warps Only", "requires": [] },
+    
+    // Or just ride it like an elevator
+    { "category": "forge_via_parkour", "from": "Brittle Hollow", "to": "Hanging City Ceiling", "requires": [ { "item": "Spacesuit" } ] },
+    { "category": "forge_via_parkour", "from": "Hanging City Ceiling", "to": "Forge via Parkour", "requires": [] },
+    { "category": "forge_via_parkour", "from": "Forge via Parkour", "to": "Black Hole Forge", "requires": [] },
 
     { "from": "Space", "to": "GD Ocean Depths", "requires": [ { "item": "Tornado Aerodynamic Adjustments" } ] },
     { "from": "GD Ocean Depths", "to": "GD Core", "requires": [ { "item": "Electrical Insulation" }, { "item": "Spacesuit" } ] },

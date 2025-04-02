@@ -23,6 +23,8 @@ def should_generate(category: Optional[str], options: OuterWildsGameOptions) -> 
         return options.enable_eote_dlc.value == 1
     elif category == 'feldspar_via_db_surface':  # only generate if logic rule is enabled
         return options.feldspar_via_db_surface.value == 1
+    elif category == 'forge_via_parkour':  # only generate if logic rule is enabled
+        return options.forge_via_parkour.value == 1
     elif category == 'hn1':
         return options.enable_hn1_mod.value == 1
     elif category == 'to':
