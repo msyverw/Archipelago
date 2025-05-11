@@ -23,6 +23,8 @@ class Goal(Choice):
     option_song_of_six = 3
     option_song_of_seven = 4
     option_echoes_of_the_eye = 5
+    option_song_of_the_bramble = 6
+    option_song_of_eight = 7
 
 
 class RandomizeCoordinates(DefaultOnToggle):
@@ -138,6 +140,7 @@ class Spawn(Choice):
     option_giants_deep = 4
     option_stranger = 5
     option_random_non_vanilla = 6
+    option_deep_bramble = 7
     default = 0
 
 
@@ -246,6 +249,14 @@ class EnableFretsQuestMod(Toggle):
     display_name = "Enable Fret's Quest Story Mod"
 
 
+class EnableForgottenCastawaysMod(Toggle):
+    """
+    Incorporates Forgotten Castaways story mod content into the randomizer with an additional X items and X locations.
+    If logsanity is enabled, that will add another X locations, for a total of X FC locations.
+    """
+    display_name = "Enable Forgotten Castaways Story Mod"
+
+
 @dataclass
 class OuterWildsGameOptions(PerGameCommonOptions):
     start_inventory_from_pool: StartInventoryPool
@@ -270,6 +281,7 @@ class OuterWildsGameOptions(PerGameCommonOptions):
     enable_ac_mod: EnableAstralCodecMod
     enable_hn2_mod: EnableHearthsNeighbor2MagistariumMod
     enable_fq_mod: EnableFretsQuestMod
+    enable_fc_mod: EnableForgottenCastawaysMod
 
 
 def get_creation_settings(options: OuterWildsGameOptions) -> Set[str]:

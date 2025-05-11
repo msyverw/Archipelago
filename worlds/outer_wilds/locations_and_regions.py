@@ -157,6 +157,8 @@ def create_regions(world: "OuterWildsWorld") -> None:
         menu.add_exits(["Giant's Deep"])
     elif options.spawn == Spawn.option_stranger:
         menu.add_exits(["Stranger Sunside Hangar"])
+    elif world.spawn == Spawn.option_deep_bramble:
+        menu.add_exits(["Bramble's Doorstep"]) # TODO: Stop space access without Warp Drive
 
     if world.warps == 'vanilla':
         def has_codes(state): return state.has("Nomai Warp Codes", p)
