@@ -108,27 +108,20 @@
 
     { "category": "hn1|hn2|fq|fc", "code": 1734473761, "name": "Warp Drive", "type": "progression" },
 
-    { "category": "fc", "split_translator": true, "code": 1734473761, "name": "Translator (Dark Bramble)", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Expanded Dictionary", "type": "progression" },
+    { "category": "fc", "split_translator": true, "code": 1734473762, "name": "Translator (Deep Bramble)", "type": "progression" },
+    { "category": "fc", "code": 1734473763, "name": "Expanded Dictionary", "type": "progression" },
 
-    { "category": "fc", "code": 1734473761, "name": "Nomai Trailmarkers Frequency", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "First Marker Signal", "type": "filler" },
-    { "category": "fc", "code": 1734473761, "name": "Camp Marker Signal", "type": "progression" },
+    { "category": "fc", "code": 1734473764, "name": "Nomai Trailmarkers Frequency", "type": "progression" },
+    { "category": "fc", "code": 1734473768, "name": "Amplified Ambience Signal", "type": "progression" },
+    { "category": "fc", "code": 1734473769, "name": "Gravitational Anomaly Signal", "type": "progression" },
+    { "category": "fc", "code": 1734473770, "name": "Geothermal Activity Signal", "type": "progression" },
+    { "category": "fc", "code": 1734473771, "name": "Echolocation Tones Frequency", "type": "progression" },
 
-    { "category": "fc", "code": 1734473761, "name": "Natural Phenomena Frequency", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Amplified Ambience Signal", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Gravitational Anomaly Signal", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Geothermal Activity Signal", "type": "progression" },
+    { "category": "fc", "code": 1734473775, "name": "Taming Techniques", "type": "progression" },
+    { "category": "fc", "code": 1734473776, "name": "Crystal Repair Manual", "type": "progression" },
+    { "category": "fc", "code": 1734473777, "name": "Thermal Insulation", "type": "progression" },
+    { "category": "fc", "code": 1734473778, "name": "Probability Rule", "type": "progression" },
 
-    { "category": "fc", "code": 1734473761, "name": "Echolocation Tones Frequency", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Alien Echolocation Signal", "type": "filler" },
-    { "category": "fc", "code": 1734473761, "name": "Warped Echolocation Signal", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Ditylum Echolocation Signal", "type": "filler" },
-
-    { "category": "fc", "code": 1734473761, "name": "Taming Techniques", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Crystal Repair Manual", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Thermal Insulation", "type": "progression" },
-    { "category": "fc", "code": 1734473761, "name": "Probability Rule", "type": "progression" },
-
+    { "category": "base&fc", "code": null, "name": "Victory - Song of the Bramble", "type": "progression" },
     { "category": "base&dlc&fc", "code": null, "name": "Victory - Song of Eight", "type": "progression" }
 ]

@@ -146,6 +146,8 @@ class OuterWildsWorld(World):
             'song_of_six':          "Victory - Song of Six",
             'song_of_seven':        "Victory - Song of Seven",
             'echoes_of_the_eye':    "Victory - Echoes of the Eye",
+            'song_of_the_bramble':  "Victory - Song of the Bramble",
+            'song_of_eight':        "Victory - Song of Eight",
         }
 
         goal_item = option_key_to_item_name[self.options.goal.current_key]

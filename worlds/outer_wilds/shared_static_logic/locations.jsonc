@@ -1750,6 +1750,28 @@
         "category": "dlc", "address": null, "name": "Victory - Echoes of the Eye",
         "region": "Sealed Vault", "requires": []
     },
+    {
+        "category": "base&fc", "address": null, "name": "Victory - Song of the Bramble",
+        "region": "The Vessel",
+        "requires": [
+            { "item": "Warp Core Installation Manual" },
+            { "item": "Coordinates" },
+            { "region": "Ash Twin Interior" },
+            { "region": "Bramble's Finale" } // Bramble means meeting Ditylum
+        ]
+    },
+    {
+        "category": "base", "address": null, "name": "Victory - Song of Eight",
+        "region": "The Vessel",
+        "requires": [
+            { "item": "Warp Core Installation Manual" },
+            { "item": "Coordinates" },
+            { "region": "Ash Twin Interior" },
+            { "region": "Sixth Location" }, // Eight means Solanum, Prisoner, AND Ditylum
+            { "region": "Sealed Vault" },
+            { "region": "Bramble's Finale" }
+        ]
+    },
 
 // Hearth's Neighbor Story Mod Default Locations
 // These location ids start at 1085042000 (i.e. rounding up to the next thousand),
@@ -3125,23 +3147,23 @@
 // Forgotten Castaways Story Mod Logsanity Locations
 
     {
-        "category": "fc", "logsanity": true, "address": 1085047100, "name": "FC Ship Log: Stranded Nomai 1 - Regroup",
+        "category": "fc", "logsanity": true, "address": 1085047100, "name": "DB Ship Log: Stranded Nomai 1 - Regroup",
         "region": "The Vessel", "requires": [ { "item": "Translator (Dark Bramble)" } ]
     },
     {
-        "category": "fc", "logsanity": true, "address": 1085047101, "name": "FC Ship Log: Stranded Nomai 2 - Plan",
+        "category": "fc", "logsanity": true, "address": 1085047101, "name": "DB Ship Log: Stranded Nomai 2 - Plan",
         "region": "The Vessel", "requires": [ { "item": "Translator (Dark Bramble)" } ]
     },
     {
-        "category": "fc", "logsanity": true, "address": 1085047102, "name": "FC Ship Log: Stranded Nomai 3 - Escape",
+        "category": "fc", "logsanity": true, "address": 1085047102, "name": "DB Ship Log: Stranded Nomai 3 - Escape",
         "region": "The Vessel", "requires": [ { "item": "Translator (Dark Bramble)" } ]
     },
     {
-        "category": "fc", "logsanity": true, "address": 1085047103, "name": "FC Ship Log: Stranded Nomai 4 - Device",
+        "category": "fc", "logsanity": true, "address": 1085047103, "name": "DB Ship Log: Stranded Nomai 4 - Device",
         "region": "The Vessel", "requires": [ { "item": "Translator (Dark Bramble)" } ]
     },
     {
-        "category": "fc", "logsanity": true, "address": 1085047104, "name": "FC Ship Log: Stranded Nomai 5 - Leave",
+        "category": "fc", "logsanity": true, "address": 1085047104, "name": "DB Ship Log: Stranded Nomai 5 - Leave",
         "region": "The Vessel", "requires": []
     },
     {
@@ -3199,7 +3221,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047117, "name": "FC Ship Log: Recursive Node 2 - Signal",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Signalscope" }, { "item": "Natural Phenomena Frequency" } ]
+        "region": "Bramble's Doorstep", "requires": [ { "item": "Signalscope" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047118, "name": "FC Ship Log: Northern Campsite 1 - Visit",
@@ -3251,7 +3273,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047130, "name": "FC Ship Log: Graviton's Folly 2 - Signal",
-        "region": "Graviton's Folly", "requires": [ { "item": "Signalscope" }, { "item": "Natural Phenomena Frequency" } ]
+        "region": "Graviton's Folly", "requires": [ { "item": "Signalscope" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047131, "name": "FC Ship Log: Pillar Town 1 - Visit",
@@ -3599,11 +3621,6 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047217, "name": "FC Ship Log: DNP 7 - Friend",
-        "region": "Bramble's Heart", "requires": [
-          { "region": "Venomous Reject" },
-          { "region": "Dangerous Node" },
-          { "item": "Translator (Deep Bramble)" },
-          { "item": "Expanded Dictionary" }
-        ]
+        "region": "Bramble's Finale", "requires": []
     }
 ]
