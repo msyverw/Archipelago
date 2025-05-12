@@ -338,36 +338,39 @@
     
     { "category": "fc", "from": "Deep Bramble", "to": "Lover's Rock", "requires": [
         { "item": "Signalscope" },
-        { "item": "Nomai Trailmarkers Frequency" },
-        { "item": "Camp Marker Signal" }
+        { "item": "Nomai Trailmarkers Frequency" }
     ] },
     { "category": "fc", "from": "Deep Bramble", "to": "Graviton's Folly", "requires": [
         { "item": "Signalscope" },
-        { "item": "Natural Phenomena Frequency" },
         { "item": "Gravitational Anomaly Signal" }
     ] },
     { "category": "fc", "from": "Deep Bramble", "to": "Shattered Hearth", "requires": [
         { "item": "Signalscope" },
-        { "item": "Natural Phenomena Frequency" },
         { "item": "Geothermal Activity Signal" }
     ] },
     { "category": "fc", "from": "Deep Bramble", "to": "Dangerous Node", "requires": [
         { "item": "Signalscope" },
-        { "item":  "Echolocation Tones Frequency" },
-        { "item":  "Warped Echolocation Signal" }
+        { "item": "Echolocation Tones Frequency" }
     ] },
 
     { "category": "fc", "from": "Shattered Hearth", "to": "Magma's Recursion", "requires": [ { "item":  "Thermal Insulation" } ] },
     { "category": "fc", "from": "Magma's Recursion", "to": "Bramble's Heart", "requires": [ { "item":  "Probability Rule" } ] },
     { "category": "fc", "from": "Magma's Recursion", "to": "Eye Signal Lab", "requires": [
         { "region": "Lover's Rock" },
-        { "item":  "Crystal Repair Manual" }
+        { "item": "Crystal Repair Manual" }
     ] },
 
     { "category": "fc", "from": "Shattered Hearth", "to": "Enzyme Lab", "requires": [ { "item":  "Taming Techniques" } ] },
     { "category": "fc", "from": "Shattered Hearth", "to": "Translation Lab", "requires": [ { "item":  "Scout" } ] },
     { "category": "fc", "from": "Shattered Hearth", "to": "Venomous Reject", "requires": [
         { "item": "Scout" },
-        { "item":  "Taming Techniques" }
+        { "item": "Taming Techniques" }
+    ] },
+
+    { "category": "fc", "from": "Bramble's Heart", "to": "Bramble's Finale", "requires": [
+        { "region": "Venomous Reject" },
+        { "region": "Dangerous Node" },
+        { "item": "Translator (Deep Bramble)" },
+        { "item": "Expanded Dictionary" }
     ] }
 ]
