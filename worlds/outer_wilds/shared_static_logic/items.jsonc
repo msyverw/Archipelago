@@ -92,6 +92,7 @@
     { "category": "base&dlc", "code": null, "name": "Victory - Song of Six", "type": "progression" },
     { "category": "base&dlc", "code": null, "name": "Victory - Song of Seven", "type": "progression" },
     { "category": "dlc", "code": null, "name": "Victory - Echoes of the Eye", "type": "progression" },
+    { "category": "base", "code": null, "name": "Victory - Song of the Universe", "type": "progression" },
 
     { "category": "hn1", "code": 1734473752, "name": "Neighbor's Distress Signal Frequency", "type": "progression" },
     { "category": "hn1", "code": 1734473753, "name": "Lava Core Signals Frequency", "type": "progression" },
@@ -120,8 +121,5 @@
     { "category": "fc", "code": 1734473775, "name": "Taming Techniques", "type": "progression" },
     { "category": "fc", "code": 1734473776, "name": "Crystal Repair Manual", "type": "progression" },
     { "category": "fc", "code": 1734473777, "name": "Thermal Insulation", "type": "progression" },
-    { "category": "fc", "code": 1734473778, "name": "Probability Rule", "type": "progression" },
-
-    { "category": "base&fc", "code": null, "name": "Victory - Song of the Bramble", "type": "progression" },
-    { "category": "base&dlc&fc", "code": null, "name": "Victory - Song of Eight", "type": "progression" }
+    { "category": "fc", "code": 1734473778, "name": "Probability Rule", "type": "progression" }
 ]
