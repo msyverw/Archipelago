@@ -6,7 +6,7 @@ from typing import Any, Dict, List, NamedTuple, Optional, Set
 from BaseClasses import CollectionState, Location, Region
 from Utils import restricted_loads
 from worlds.generic.Rules import set_rule
-from .options import Spawn
+from .options import Goal, Spawn
 from .should_generate import should_generate, should_generate_location
 from .warp_platforms import warp_platform_to_logical_region, warp_platform_required_items
 
@@ -157,7 +157,7 @@ def create_regions(world: "OuterWildsWorld") -> None:
         menu.add_exits(["Giant's Deep"])
     elif options.spawn == Spawn.option_stranger:
         menu.add_exits(["Stranger Sunside Hangar"])
-    elif world.spawn == Spawn.option_deep_bramble:
+    elif options.spawn == Spawn.option_deep_bramble:
         menu.add_exits(["Bramble's Doorstep"]) # TODO: Stop space access without Warp Drive
 
     if world.warps == 'vanilla':
@@ -228,6 +228,24 @@ def create_regions(world: "OuterWildsWorld") -> None:
             bhng_connection in hourglass_twins or whs_connection in hourglass_twins)):
             mw.get_region("Forge via Warps Only", p).connect(mw.get_region("Black Hole Forge", p), "Forge Warp Path")
 
+    if world.options.goal == Goal.option_song_of_the_universe:
+        requirements = [
+            { "item": "Warp Core Installation Manual" },
+            { "item": "Coordinates" },
+            { "region": "Ash Twin Interior" },
+        ]
+        friend_to_region = {
+            "Nomai": "Sixth Location",
+            "Stranger": "Sealed Vault",
+            "Bramble": "Bramble's Finale",
+        }
+        if world.options.friend_count.value == 1:
+            requirements.append({ "anyOf": [{ "region": friend_to_region[friend] } for friend in world.options.friend_selection.value] })
+        elif world.options.friend_count.value > 1:
+            requirements.append({ f"any{world.options.friend_count.value}": [{ "region": friend_to_region[friend] } for friend in world.options.friend_selection.value] })
+        
+        set_rule(mw.get_location("Victory - Song of the Universe", p), lambda state, r=requirements, st=split_translator: eval_rule(state, p, r, st))
+
 
 # In the .jsonc files we use, a location or region connection's "access rule" is defined
 # by a "requires" key, whose value is an array of "criteria" strings or objects.
@@ -249,7 +267,7 @@ def eval_criterion(state: CollectionState, p: int, criterion: Any, split_transla
             return False
         key, value = next(iter(criterion.items()))
 
-        # { "item": "..." } and { "anyOf": [ ... ] } and { "location": "foo" } and { "region": "bar" }
+        # { "item": "..." } and { "anyOf": [ ... ] } and { "location": "foo" } and { "region": "bar" } and { "anyN": [ ... ] }
         # mean exactly what they sound like, and those are the only kinds of criteria.
         if key == "item" and isinstance(value, str):
             if not split_translator and value.startswith("Translator ("):
@@ -261,6 +279,16 @@ def eval_criterion(state: CollectionState, p: int, criterion: Any, split_transla
             return state.can_reach(value, "Location", p)
         elif key == "region" and isinstance(value, str):
             return state.can_reach(value, "Region", p)
+        elif key.startswith("any") and isinstance(value, list):
+            try: n = int(key[3:])
+            except: n = 0
+            if n > 1: # only supports 2 or more; use anyOf for 1
+                count = 0
+                for sub_criterion in value:
+                    count += eval_criterion(state, p, sub_criterion, split_translator) 
+                    if count == n:
+                        return True
+                return False
 
     raise ValueError("Unable to evaluate rule criterion: " + json.dumps(criterion))
 

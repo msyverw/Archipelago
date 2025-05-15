@@ -3,7 +3,7 @@ from typing import Set
 
 from schema import Schema, And
 
-from Options import Choice, DefaultOnToggle, OptionDict, PerGameCommonOptions, Range, StartInventoryPool, Toggle
+from Options import Choice, DefaultOnToggle, NamedRange, OptionDict, OptionSet, PerGameCommonOptions, Range, StartInventoryPool, Toggle
 
 
 class Goal(Choice):
@@ -15,6 +15,7 @@ class Goal(Choice):
     Song of Six:          Reach the Eye after meeting either Solanum or the Prisoner
     Song of Seven:        Reach the Eye after meeting both Solanum and the Prisoner
     Echoes of the Eye:    Meet the Prisoner and complete the DLC
+    Song of the Universe: Reach the Eye after meeting the number of Friends specified below
     """
     display_name = "Goal"
     option_song_of_five = 0
@@ -23,8 +24,23 @@ class Goal(Choice):
     option_song_of_six = 3
     option_song_of_seven = 4
     option_echoes_of_the_eye = 5
-    option_song_of_the_bramble = 6
-    option_song_of_eight = 7
+    option_song_of_the_universe = 6
+
+
+class FriendSelection(OptionSet):
+    """The Friends that should count towards the Song of the Universe goal option.
+    Friends from DLC/mods require their respective content to be enabled; see each mod's description below for valid names."""
+    display_name = "Valid Friends"
+    default = ["Nomai", "Stranger"]
+    valid_keys = {"Nomai", "Stranger", "Bramble"}
+
+
+class FriendCount(Range):
+    """The number of Friends needed for the Song of the Universe goal option."""
+    display_name = "Song of the Universe Count"
+    range_start = 0
+    range_end = len(FriendSelection.valid_keys)
+    default = len(FriendSelection.default)
 
 
 class RandomizeCoordinates(DefaultOnToggle):
@@ -261,6 +277,8 @@ class EnableForgottenCastawaysMod(Toggle):
 class OuterWildsGameOptions(PerGameCommonOptions):
     start_inventory_from_pool: StartInventoryPool
     goal: Goal
+    friend_selection: FriendSelection
+    friend_count: FriendCount
     spawn: Spawn
     early_key_item: EarlyKeyItem
     enable_eote_dlc: EnableEchoesOfTheEyeDLC

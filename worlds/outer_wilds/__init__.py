@@ -71,6 +71,15 @@ class OuterWildsWorld(World):
         if self.options.shuffle_spacesuit and self.options.spawn != Spawn.option_vanilla:
             raise OptionError('Incompatible options: shuffle_spacesuit is true and spawn is non-vanilla (%s)', self.options.spawn)
 
+        if self.options.goal == Goal.option_song_of_the_universe:
+            if self.options.friend_count > len(self.options.friend_selection.value):
+                raise OptionError(f'Incompatible options: goal {self.options.goal.current_key} requires friend_selection to have at least friend_count options chosen')
+            # TODO: perhaps just remove from the set instead of refusing to generate? (nicer when randomly enabling mods, if anyone does that)
+            if "Stranger" in self.options.friend_selection.value and not self.options.enable_eote_dlc:
+                raise OptionError(f'Incompatible options: including Stranger in goal {self.options.goal.current_key} requires enable_eote_dlc to be true')
+            if "Bramble" in self.options.friend_selection.value and not self.options.enable_fc_mod:
+                raise OptionError(f'Incompatible options: including Bramble in goal {self.options.goal.current_key} requires enable_fc_mod to be true')
+
         # implement .yaml-less Universal Tracker support
         if hasattr(self.multiworld, "generation_is_fake"):
             if hasattr(self.multiworld, "re_gen_passthrough"):
@@ -146,8 +155,7 @@ class OuterWildsWorld(World):
             'song_of_six':          "Victory - Song of Six",
             'song_of_seven':        "Victory - Song of Seven",
             'echoes_of_the_eye':    "Victory - Echoes of the Eye",
-            'song_of_the_bramble':  "Victory - Song of the Bramble",
-            'song_of_eight':        "Victory - Song of Eight",
+            'song_of_the_universe': "Victory - Song of the Universe",
         }
 
         goal_item = option_key_to_item_name[self.options.goal.current_key]

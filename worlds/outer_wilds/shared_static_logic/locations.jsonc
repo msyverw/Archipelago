@@ -1751,26 +1751,9 @@
         "region": "Sealed Vault", "requires": []
     },
     {
-        "category": "base&fc", "address": null, "name": "Victory - Song of the Bramble",
+        "category": "base", "address": null, "name": "Victory - Song of the Universe",
         "region": "The Vessel",
-        "requires": [
-            { "item": "Warp Core Installation Manual" },
-            { "item": "Coordinates" },
-            { "region": "Ash Twin Interior" },
-            { "region": "Bramble's Finale" } // Bramble means meeting Ditylum
-        ]
-    },
-    {
-        "category": "base", "address": null, "name": "Victory - Song of Eight",
-        "region": "The Vessel",
-        "requires": [
-            { "item": "Warp Core Installation Manual" },
-            { "item": "Coordinates" },
-            { "region": "Ash Twin Interior" },
-            { "region": "Sixth Location" }, // Eight means Solanum, Prisoner, AND Ditylum
-            { "region": "Sealed Vault" },
-            { "region": "Bramble's Finale" }
-        ]
+        "requires": [] // These need to be dynamically generated based on the yaml options
     },
 
 // Hearth's Neighbor Story Mod Default Locations
