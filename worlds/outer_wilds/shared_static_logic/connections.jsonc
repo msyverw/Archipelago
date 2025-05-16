@@ -333,7 +333,7 @@
     // Warping to Deep Bramble only requires a Black Hole Core, and High Energy Lab access is guaranteed if you have access to the Vessel
     { "category": "fc", "from": "The Vessel", "to": "Bramble's Doorstep", "requires": [] },
     // Space access already requires Launch Codes
-    { "category": "fc", "from": "Space", "to": "Deep Bramble", "requires": [ { "item":  "Warp Drive" } ] },
+    { "category": "fc", "from": "Space", "to": "Deep Bramble", "requires": [ { "item":  "Deep Bramble Coordinates" } ] },
     { "category": "fc", "from": "Deep Bramble", "to": "Bramble's Doorstep", "requires": [] },
     
     { "category": "fc", "from": "Deep Bramble", "to": "Lover's Rock", "requires": [

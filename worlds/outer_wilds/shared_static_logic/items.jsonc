@@ -102,8 +102,6 @@
 
     { "category": "fq", "code": 1734473760, "name": "Hearthian Radio Frequency", "type": "progression" },
 
-    { "category": "hn1|hn2|fq|fc", "code": 1734473761, "name": "Warp Drive", "type": "progression" },
-
     { "category": "fc", "split_translator": true, "code": 1734473762, "name": "Translator (Deep Bramble)", "type": "progression" },
     { "category": "fc", "code": 1734473763, "name": "Expanded Dictionary", "type": "progression" },
 
@@ -112,6 +110,7 @@
     { "category": "fc", "code": 1734473769, "name": "Gravitational Anomaly Signal", "type": "progression" },
     { "category": "fc", "code": 1734473770, "name": "Geothermal Activity Signal", "type": "progression" },
     { "category": "fc", "code": 1734473771, "name": "Echolocation Tones Frequency", "type": "progression" },
+    { "category": "fc", "code": 1734473761, "name": "Deep Bramble Coordinates", "type": "progression" },
 
     { "category": "fc", "code": 1734473775, "name": "Taming Techniques", "type": "progression" },
     { "category": "fc", "code": 1734473776, "name": "Crystal Repair Manual", "type": "progression" },
