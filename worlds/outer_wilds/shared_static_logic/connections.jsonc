@@ -354,7 +354,7 @@
     ] },
 
     { "category": "fc", "from": "Shattered Hearth", "to": "Magma's Recursion", "requires": [ { "item":  "Thermal Insulation" } ] },
-    { "category": "fc", "from": "Magma's Recursion", "to": "Bramble's Heart", "requires": [ { "item":  "Probability Rule" } ] },
+    { "category": "fc", "from": "Magma's Recursion", "to": "Bramble's Heart", "requires": [ { "item":  "Probability Rule" }, { "item": "Entanglement Rule" } ] },
     { "category": "fc", "from": "Magma's Recursion", "to": "Eye Signal Lab", "requires": [
         { "region": "Lover's Rock" },
         { "item": "Crystal Repair Manual" }
