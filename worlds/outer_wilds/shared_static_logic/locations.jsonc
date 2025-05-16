@@ -3488,7 +3488,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047189, "name": "FC Ship Log: Quantum Cave 3 - Third",
-        "region": "Bramble's Heart", "requires": [ { "item": "Probability Rule" } ]
+        "region": "Magma's Recursion", "requires": [ { "item": "Probability Rule" }, { "item": "Entanglement Rule" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047190, "name": "FC Ship Log: Observation Platform 1 - Visit",
