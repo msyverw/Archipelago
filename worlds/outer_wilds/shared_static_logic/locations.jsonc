@@ -1750,11 +1750,6 @@
         "category": "dlc", "address": null, "name": "Victory - Echoes of the Eye",
         "region": "Sealed Vault", "requires": []
     },
-    {
-        "category": "base", "address": null, "name": "Victory - Song of the Universe",
-        "region": "The Vessel",
-        "requires": [] // These need to be dynamically generated based on the yaml options
-    },
 
 // Hearth's Neighbor Story Mod Default Locations
 // These location ids start at 1085042000 (i.e. rounding up to the next thousand),
