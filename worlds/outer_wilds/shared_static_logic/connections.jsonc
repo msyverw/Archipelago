@@ -368,7 +368,8 @@
     { "category": "fc", "from": "Shattered Hearth", "to": "Translation Lab", "requires": [ { "item":  "Scout" } ] },
     { "category": "fc", "from": "Shattered Hearth", "to": "Venomous Reject", "requires": [
         { "item": "Scout" },
-        { "item": "Taming Techniques" }
+        { "item": "Taming Techniques" },
+        { "item": "Silent Running Mode" }
     ] },
 
     { "category": "fc", "from": "Bramble's Heart", "to": "Bramble's Finale", "requires": [
