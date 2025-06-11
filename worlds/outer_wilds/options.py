@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import Set
 
 from schema import Schema, And
 
@@ -50,12 +49,22 @@ class TrapTypeWeights(OptionDict):
         "Ship Damage Trap": And(int, lambda n: n >= 0),
         "Nap Trap": And(int, lambda n: n >= 0),
         "Audio Trap": And(int, lambda n: n >= 0),
+        "Suit Puncture Trap": And(int, lambda n: n >= 0),
+        "Map Disable Trap": And(int, lambda n: n >= 0),
+        "HUD Corruption Trap": And(int, lambda n: n >= 0),
+        "Ice Physics Trap": And(int, lambda n: n >= 0),
+        "Supernova Trap": And(int, lambda n: n >= 0),
     })
     display_name = "Trap Type Weights"
     default = {
         "Ship Damage Trap": 2,
         "Nap Trap": 2,
         "Audio Trap": 1,
+        "Suit Puncture Trap": 1,
+        "Map Disable Trap": 0,
+        "HUD Corruption Trap": 1,
+        "Ice Physics Trap": 0,
+        "Supernova Trap": 0,
     }
 
 
@@ -282,7 +291,7 @@ class OuterWildsGameOptions(PerGameCommonOptions):
     enable_fc_mod: EnableForgottenCastawaysMod
 
 
-def get_creation_settings(options: OuterWildsGameOptions) -> Set[str]:
+def get_creation_settings(options: OuterWildsGameOptions) -> set[str]:
     relevant_settings = set()
     if options.logsanity.value == 1:
         relevant_settings.add("logsanity")

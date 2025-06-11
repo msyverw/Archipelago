@@ -1,4 +1,4 @@
-from typing import Any, Dict, TextIO
+from typing import Any, TextIO
 
 from BaseClasses import Tutorial
 from Options import OptionError
@@ -39,7 +39,7 @@ class OuterWildsWorld(World):
 
     # this is how we tell the Universal Tracker we want to use re_gen_passthrough
     @staticmethod
-    def interpret_slot_data(slot_data: Dict[str, Any]) -> Dict[str, Any]:
+    def interpret_slot_data(slot_data: dict[str, Any]) -> dict[str, Any]:
         return slot_data
 
     # and this is how we tell Universal Tracker we don't need the yaml
@@ -70,6 +70,9 @@ class OuterWildsWorld(World):
 
         if self.options.shuffle_spacesuit and self.options.spawn != Spawn.option_vanilla:
             raise OptionError('Incompatible options: shuffle_spacesuit is true and spawn is non-vanilla (%s)', self.options.spawn)
+
+        if self.options.spawn == Spawn.option_deep_bramble and not self.options.enable_fc_mod:
+            raise OptionError('Incompatible options: deep bramble spawn requires enable_fc_mod to be true')
 
         # implement .yaml-less Universal Tracker support
         if hasattr(self.multiworld, "generation_is_fake"):
@@ -169,7 +172,7 @@ class OuterWildsWorld(World):
         slot_data["warps"] = self.warps
         # Archipelago does not yet have apworld versions (data_version is deprecated),
         # so we have to roll our own with slot_data for the time being
-        slot_data["apworld_version"] = "0.3.15"
+        slot_data["apworld_version"] = "0.3.17"
         return slot_data
 
     def write_spoiler(self, spoiler_handle: TextIO) -> None:
