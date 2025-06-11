@@ -71,6 +71,9 @@ class OuterWildsWorld(World):
         if self.options.shuffle_spacesuit and self.options.spawn != Spawn.option_vanilla:
             raise OptionError('Incompatible options: shuffle_spacesuit is true and spawn is non-vanilla (%s)', self.options.spawn)
 
+        if self.options.spawn == Spawn.option_deep_bramble and not self.options.enable_fc_mod:
+            raise OptionError('Incompatible options: deep bramble spawn requires enable_fc_mod to be true')
+
         # implement .yaml-less Universal Tracker support
         if hasattr(self.multiworld, "generation_is_fake"):
             if hasattr(self.multiworld, "re_gen_passthrough"):
