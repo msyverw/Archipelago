@@ -215,7 +215,7 @@ def create_regions(world: "OuterWildsWorld") -> None:
             r2 = mw.get_region(region_name_2, p)
             r1.connect(r2, "%s->%s warp" % (region_name_1, region_name_2), rule)
             r2.connect(r1, "%s->%s warp" % (region_name_2, region_name_1), rule)
-        
+
         # To access the Black Hole Forge without the Launch Codes, there needs to be
         # a path from Brittle Hollow proper to the Hanging City Ceiling. This path
         # exists if the BHF warp is connected to one of the other two warps accessible

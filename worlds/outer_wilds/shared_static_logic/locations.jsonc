@@ -3249,7 +3249,7 @@
     },
     {
         "category": "fc", "address": 1085047033, "name": "FC: Eye Signal Lab (Text Wall)",
-        "region": "Eye Signal Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Eye Signal Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Expanded Dictionary" } ]
     },
     {
         "category": "fc", "address": 1085047034, "name": "FC: Enter Bramble's Heart",
@@ -3261,7 +3261,7 @@
     },
     {
         "category": "fc", "address": 1085047036, "name": "FC: DNP (Text Wall)",
-        "region": "Bramble's Heart", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Bramble's Heart", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Expanded Dictionary" } ]
     },
     {
         "category": "fc", "address": 1085047037, "name": "FC: DNP (Text Wheel)",

@@ -335,7 +335,7 @@
     // Space access already requires Launch Codes
     { "category": "fc", "from": "Space", "to": "Deep Bramble", "requires": [ { "item":  "Deep Bramble Coordinates" } ] },
     { "category": "fc", "from": "Deep Bramble", "to": "Bramble's Doorstep", "requires": [] },
-    
+
     { "category": "fc", "from": "Deep Bramble", "to": "Lover's Rock", "requires": [
         { "item": "Signalscope" },
         { "item": "Nomai Trailmarkers Frequency" }
