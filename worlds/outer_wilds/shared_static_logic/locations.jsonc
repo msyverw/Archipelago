@@ -3352,7 +3352,7 @@
         "region": "The Vessel", "requires": [ { "item": "Translator (Dark Bramble)" } ]
     },
     {
-        "category": "fc", "logsanity": true, "address": 1085047217, "name": "DB Ship Log: Stranded Nomai 5 - Warp",
+        "category": "fc", "logsanity": true, "address": 1085047104, "name": "DB Ship Log: Stranded Nomai 5 - Warp",
         "region": "Space", "requires": [ { "item": "Deep Bramble Coordinates" } ] // Regulated by DPB Coords to control your ability to warp into the Deep Bramble
     },
     {
