@@ -3292,7 +3292,7 @@
     },
     {
         "category": "fc", "address": 1085047043, "name": "FC: Scan Gravitational Anomaly Signal",
-        "region": "Graviton's Folly", "requires": [ { "item": "Signalscope" } ]
+        "region": "Folly's Exterior", "requires": [ { "item": "Signalscope" } ]
     },
     {
         "category": "fc", "address": 1085047044, "name": "FC: Scan Geothermal Activity Signal",
@@ -3458,11 +3458,11 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047129, "name": "FC Ship Log: Graviton's Folly 1 - Visit",
-        "region": "Graviton's Folly", "requires": []
+        "region": "Folly's Exterior", "requires": []
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047130, "name": "FC Ship Log: Graviton's Folly 2 - Signal",
-        "region": "Graviton's Folly", "requires": [ { "item": "Signalscope" } ]
+        "region": "Folly's Exterior", "requires": [ { "item": "Signalscope" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047131, "name": "FC Ship Log: Pillar Town 1 - Visit",
@@ -3473,8 +3473,8 @@
         "region": "Graviton's Folly", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
-        "category": "fc", "logsanity": true, "address": 1085047133, "name": "FC Ship Log: Alien Study 1 - Visit",
-        "region": "Graviton's Folly", "requires": []
+        "category": "fc", "logsanity": true, "address": 1085047133, "name": "FC Ship Log: Alien Study 1 - Identify",
+        "region": "Graviton's Folly", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047134, "name": "FC Ship Log: Alien Study 2 - Eyes",
@@ -3634,7 +3634,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047173, "name": "FC Ship Log: Landing Zone 1 - Signal",
-        "region": "Magma's Recursion", "requires": []
+        "region": "Shattered Hearth", "requires": []
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047174, "name": "FC Ship Log: Landing Zone 2 - Rescue",
