@@ -3272,7 +3272,7 @@
         "region": "Bramble's Heart", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Expanded Dictionary" } ]
     },
     {
-        "category": "fc", "address": 1085047038, "name": "FC: DNP (Text Wheel)",
+        "category": "fc", "address": 1085047039, "name": "FC: DNP (Text Wheel)",
         "region": "Bramble's Heart", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
