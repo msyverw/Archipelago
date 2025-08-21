@@ -275,8 +275,8 @@ class EnableFretsQuestMod(Toggle):
 
 class EnableForgottenCastawaysMod(Toggle):
     """
-    Incorporates Forgotten Castaways story mod content into the randomizer with an additional X items and X locations.
-    If logsanity is enabled, that will add another X locations, for a total of X FC locations.
+    Incorporates Forgotten Castaways story mod content into the randomizer with an additional 13 items and 54 locations.
+    If logsanity is enabled, that will add another 118 locations, for a total of 172 FC locations.
     """
     display_name = "Enable Forgotten Castaways Story Mod"
 
