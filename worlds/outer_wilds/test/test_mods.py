@@ -111,8 +111,8 @@ class TestFC(OuterWildsTestBase):
         "enable_fc_mod": 1
     }
 
-    def test_fc(self): # TODO
-        self.assertEqual(self.getLocationCount(), 107)  # 87(+2V) base game + X FC locations
+    def test_fc(self):
+        self.assertEqual(self.getLocationCount(), 143)  # 87(+2V) base game + 54 FC locations
 
 
 class TestFCLogsanity(OuterWildsTestBase):
@@ -121,10 +121,10 @@ class TestFCLogsanity(OuterWildsTestBase):
         "logsanity": 1
     }
 
-    def test_fc_logsanity(self): # TODO
+    def test_fc_logsanity(self):
         # 87(+2V) base game default locations + 176 base game logsanity locations +
-        # X FC default locations + X FC logsanity locations
-        self.assertEqual(self.getLocationCount(), 321)
+        # 54 FC default locations + 118 FC logsanity locations
+        self.assertEqual(self.getLocationCount(), 437)
 
 
 class TestAllMods(OuterWildsTestBase):
@@ -137,15 +137,15 @@ class TestAllMods(OuterWildsTestBase):
         "enable_fc_mod": 1,
     }
 
-    def test_all_mods(self): # TODO
+    def test_all_mods(self):
         # 87(+2V) base game default locations +
         # 20 HN1 default locations +
         # 21 TO default locations +
         # 21 AC locations +
         # 18 HN2 locations +
         # 18 FQ default locations +
-        # X FC default locations
-        self.assertEqual(self.getLocationCount(), 187)
+        # 54 FC default locations
+        self.assertEqual(self.getLocationCount(), 241)
 
 
 class TestAllModsLogsanity(OuterWildsTestBase):
@@ -159,15 +159,15 @@ class TestAllModsLogsanity(OuterWildsTestBase):
         "logsanity": 1
     }
 
-    def test_all_mods_logsanity(self): # TODO
+    def test_all_mods_logsanity(self):
         # 87(+2V) base game default locations + 176 base game logsanity locations +
         # 20 HN1 default locations + 41 HN1 logsanity locations +
         # 21 TO default locations + 44 TO logsanity locations +
         # 21 AC default locations + 39 AC logsanity locations +
         # 18 HN2 default locations + 30 HN2 logsanity locations +
         # 18 FQ default locations + 38 FQ logsanity locations +
-        # X FC default locations + X FC logsanity locations
-        self.assertEqual(self.getLocationCount(), 555)
+        # 54 FC default locations + 118 FC logsanity locations
+        self.assertEqual(self.getLocationCount(), 727)
 
 
 # this is just to get an assertion on the maximum possible location count
@@ -183,7 +183,7 @@ class TestAllModsAndDLCLogsanity(OuterWildsTestBase):
         "logsanity": 1
     }
 
-    def test_all_mods_and_dlc_logsanity(self): # TODO
+    def test_all_mods_and_dlc_logsanity(self):
         # 87(+2V) base game default locations + 176 base game logsanity locations +
         # 34(+4V) DLC default locations + 72 DLC logsanity locations +
         # 20 HN1 default locations + 41 HN1 logsanity locations +
@@ -191,8 +191,8 @@ class TestAllModsAndDLCLogsanity(OuterWildsTestBase):
         # 21 AC default locations + 39 AC logsanity locations +
         # 18 HN2 default locations + 30 HN2 logsanity locations +
         # 18 FQ default locations + 38 FQ logsanity locations +
-        # X FC default locations + X FC logsanity locations
-        self.assertEqual(self.getLocationCount(), 665)
+        # 54 FC default locations + 118 FC logsanity locations
+        self.assertEqual(self.getLocationCount(), 837)
 
 
 class RegressionTestACAndWarpRando(OuterWildsTestBase):
