@@ -73,6 +73,9 @@ class OuterWildsWorld(World):
         if self.options.shuffle_spacesuit and self.options.spawn != Spawn.option_vanilla:
             raise OptionError('Incompatible options: shuffle_spacesuit is true and spawn is non-vanilla (%s)', self.options.spawn)
 
+        if self.options.spawn == Spawn.option_deep_bramble and not self.options.enable_fc_mod:
+            raise OptionError('Incompatible options: deep bramble spawn requires enable_fc_mod to be true')
+
         # implement .yaml-less Universal Tracker support
         if hasattr(self.multiworld, "generation_is_fake"):
             if hasattr(self.multiworld, "re_gen_passthrough"):
@@ -88,6 +91,7 @@ class OuterWildsWorld(World):
                     self.options.enable_outsider_mod.value = slot_data["enable_outsider_mod"]
                     self.options.enable_ac_mod.value = slot_data["enable_ac_mod"]
                     self.options.enable_fq_mod.value = slot_data["enable_fq_mod"]
+                    self.options.enable_fc_mod.value = slot_data["enable_fc_mod"]
                     self.options.split_translator.value = slot_data["split_translator"]
             return
 
@@ -188,7 +192,7 @@ class OuterWildsWorld(World):
             "goal", "spawn",                             # affects tons of stuff, but also a client/mod faeture
             "logsanity", "enable_eote_dlc", "dlc_only",  # changes AP locations, needed by in-game tracker
             "enable_hn1_mod", "enable_hn2_mod",
-            "enable_outsider_mod", "enable_ac_mod", "enable_fq_mod",
+            "enable_outsider_mod", "enable_ac_mod", "enable_fq_mod", "enable_fc_mod",
             "split_translator"                           # changes AP items, and how client/mod implements Translator
         )
         # more client/mod features, these are only in the apworld because we want them fixed per-slot/at gen time
