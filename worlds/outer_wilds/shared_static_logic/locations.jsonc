@@ -3204,7 +3204,7 @@
     },
     {
         "category": "fc", "address": 1085047022, "name": "FC: Observation Platform (Text Wall)",
-        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "address": 1085047023, "name": "FC: Enter the Nursery",
@@ -3212,11 +3212,11 @@
     },
     {
         "category": "fc", "address": 1085047024, "name": "FC: Hearth's Core (Text Wheel)",
-        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "address": 1085047025, "name": "FC: Translation Lab (Text Wall)",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "address": 1085047026, "name": "FC: Enter Translation Lab",
@@ -3534,7 +3534,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047146, "name": "FC Ship Log: Folly's Core 3 - Tunnels",
-        "region": "Graviton's Folly", "requires": []
+        "region": "Graviton's Folly", "requires": [ { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047147, "name": "FC Ship Log: Folly's Core 4 - Crystal",
@@ -3626,7 +3626,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047169, "name": "FC Ship Log: Hearth's Core 2 - Warning",
-        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047170, "name": "FC Ship Log: Karenia's House 1 - Recording",
@@ -3714,15 +3714,15 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047191, "name": "FC Ship Log: Observation Platform 2 - Tooth",
-        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047192, "name": "FC Ship Log: Observation Platform 3 - Eggs",
-        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047193, "name": "FC Ship Log: Observation Platform 4 - Reluctant",
-        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Shattered Hearth", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047194, "name": "FC Ship Log: Enzyme Lab 1 - Kevin",
@@ -3754,27 +3754,27 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047201, "name": "FC Ship Log: Translations 1 - Aliens",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047202, "name": "FC Ship Log: Translations 2 - Name",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047203, "name": "FC Ship Log: Translations 3 - Bramble",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047204, "name": "FC Ship Log: Translations 4 - Influence",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047205, "name": "FC Ship Log: Translations 5 - Dictionary",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047206, "name": "FC Ship Log: Translations 6 - Escape",
-        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Translation Lab", "requires": [ { "item": "Translator (Deep Bramble)" }, { "item": "Spacesuit" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047207, "name": "FC Ship Log: Nursery 1 - Visit",
