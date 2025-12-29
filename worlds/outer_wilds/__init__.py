@@ -120,12 +120,16 @@ class OuterWildsWorld(World):
                     relevant_translator = "Translator (Brittle Hollow)"
                 if self.options.spawn == Spawn.option_giants_deep:
                     relevant_translator = "Translator (Giant's Deep)"
+                if self.options.spawn == Spawn.option_deep_bramble:
+                    relevant_translator = "Translator (Deep Bramble)"
                 # ignore stranger spawn since it won't offer a Translator at all
 
             key_item = None
             if self.options.early_key_item == EarlyKeyItem.option_any:
                 if self.options.spawn == Spawn.option_stranger:
                     key_item = self.random.choice(["Launch Codes", "Stranger Light Modulator"])
+                if self.options.spawn == Spawn.option_deep_bramble:
+                    key_item = self.random.choice([relevant_translator, "Signalscope", "Launch Codes"])
                 else:
                     key_item = self.random.choice([relevant_translator, "Nomai Warp Codes", "Launch Codes"])
             elif self.options.early_key_item == EarlyKeyItem.option_translator:
