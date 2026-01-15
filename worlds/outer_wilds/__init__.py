@@ -9,7 +9,7 @@ from .coordinates import coordinate_description, generate_random_coordinates
 from .db_layout import generate_random_db_layout
 from .items import OuterWildsItem, all_non_event_items_table, item_name_groups, create_item, create_items
 from .locations_and_regions import all_non_event_locations_table, location_name_groups, create_regions
-from .options import EarlyKeyItem, OuterWildsGameOptions, RandomizeDarkBrambleLayout, Spawn, Goal, EnableEchoesOfTheEyeDLC
+from .options import *
 from .orbits import generate_random_orbits, generate_random_rotations
 from .warp_platforms import generate_random_warp_platform_mapping
 
@@ -53,6 +53,11 @@ class OuterWildsWorld(World):
             self.options.enable_eote_dlc = EnableEchoesOfTheEyeDLC(1)
             self.options.spawn = Spawn(Spawn.option_stranger)
             self.options.goal = Goal(Goal.option_echoes_of_the_eye)
+            self.options.enable_ac_mod = EnableAstralCodecMod(0)
+            self.options.enable_fq_mod = EnableFretsQuestMod(0)
+            self.options.enable_hn1_mod = EnableHearthsNeighborMod(0)
+            self.options.enable_hn2_mod = EnableHearthsNeighbor2MagistariumMod(0)
+            self.options.enable_outsider_mod = EnableTheOutsiderMod(0)
 
         if self.options.spawn == Spawn.option_random_non_vanilla:
             max_spawn = Spawn.option_stranger if self.options.enable_eote_dlc else Spawn.option_giants_deep
