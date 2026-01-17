@@ -3123,31 +3123,31 @@
     },
     {
         "category": "fc", "address": 1085047002, "name": "FC: Enter the Deep Bramble",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "address": 1085047003, "name": "FC: Bramble's Doorstep (Text Wheel)",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "address": 1085047004, "name": "FC: Visit Titan's Tears",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "address": 1085047005, "name": "FC: Titan's Tears Shelter (Text Wall)",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "address": 1085047006, "name": "FC: View the Hole",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "address": 1085047007, "name": "FC: Hole Overlook (Text Wall)",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "address": 1085047008, "name": "FC: Recursive Node",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "address": 1085047009, "name": "FC: Visit the Northern Campsite",
@@ -3288,7 +3288,7 @@
 
     {
         "category": "fc", "address": 1085047042, "name": "FC: Scan First Marker Signal",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Signalscope" }, { "item": "Nomai Trailmarkers Frequency" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Signalscope" }, { "item": "Nomai Trailmarkers Frequency" } ]
     },
     {
         "category": "fc", "address": 1085047043, "name": "FC: Scan Camp Marker Signal",
@@ -3296,7 +3296,7 @@
     },
     {
         "category": "fc", "address": 1085047044, "name": "FC: Scan Amplified Ambience Signal",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Signalscope" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Signalscope" } ]
     },
     {
         "category": "fc", "address": 1085047045, "name": "FC: Scan Gravitational Anomaly Signal",
@@ -3365,7 +3365,7 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047105, "name": "FC Ship Log: Bramble's Doorstep 1 - Visit",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047106, "name": "FC Ship Log: Bramble's Doorstep 2 - Nomai",
@@ -3373,27 +3373,27 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047107, "name": "FC Ship Log: Bramble's Doorstep 3 - Split",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047108, "name": "FC Ship Log: Bramble's Doorstep 4 - Beacon",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Signalscope" }, { "item": "Nomai Trailmarkers Frequency" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Signalscope" }, { "item": "Nomai Trailmarkers Frequency" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047109, "name": "FC Ship Log: Titan's Tears 1 - Visit",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047110, "name": "FC Ship Log: Titan's Tears 2 - Shelter",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047111, "name": "FC Ship Log: Hole Overlook 1 - Visit",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047112, "name": "FC Ship Log: Hole Overlook 2 - Escape",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Translator (Deep Bramble)" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Translator (Deep Bramble)" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047113, "name": "FC Ship Log: Dangerous Node 1 - Ejection",
@@ -3414,11 +3414,11 @@
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047116, "name": "FC Ship Log: Recursive Node 1 - Visit",
-        "region": "Bramble's Doorstep", "requires": []
+        "region": "Deep Bramble", "requires": []
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047117, "name": "FC Ship Log: Recursive Node 2 - Signal",
-        "region": "Bramble's Doorstep", "requires": [ { "item": "Signalscope" } ]
+        "region": "Deep Bramble", "requires": [ { "item": "Signalscope" } ]
     },
     {
         "category": "fc", "logsanity": true, "address": 1085047118, "name": "FC Ship Log: Northern Campsite 1 - Visit",
