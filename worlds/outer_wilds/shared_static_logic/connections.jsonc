@@ -355,9 +355,7 @@
     { "category": "fc", "from": "Bramble's Doorstep", "to": "Shattered Hearth", "requires": [
         { "item": "Launch Codes" },
         { "item": "Signalscope" },
-        // Any of these three signals can point you in the right direction, but one of them needs 2 items to be usable, so the logic gets a bit complex
-        { "anyOf": [ { "item": "Geothermal Activity Signal" }, { "item": "Echolocation Tones Frequency" }, { "item": "Quantum Fluctuations Frequency" } ] },
-        { "anyOf": [ { "item": "Geothermal Activity Signal" }, { "item": "Echolocation Tones Frequency" }, { "item": "Hot Shard Signal" } ] }
+        { "anyOf": [ { "item": "Geothermal Activity Signal" }, { "item": "Echolocation Tones Frequency" }, [ { "item": "Quantum Fluctuations Frequency" }, { "item": "Hot Shard Signal" } ] ] }
     ] },
     { "category": "fc", "from": "Bramble's Doorstep", "to": "Dangerous Node", "requires": [
         { "item": "Launch Codes" },
