@@ -162,6 +162,10 @@ def create_regions(world: "OuterWildsWorld") -> None:
         mw.get_entrance("Menu -> Space", p).access_rule = lambda state: state.has_all(["Launch Codes", "Deep Bramble Coordinates"], p)
         mw.get_region("Deep Bramble", p).add_exits(["Deep Bramble via Warp Drive"], {"Deep Bramble via Warp Drive": lambda state: state.has("Launch Codes", p)})
 
+        # The AC vision only triggers in the normal system, so we need to be able to get there
+        if options.enable_ac_mod and options.logsanity:
+            mw.get_location("AC Ship Log: Flashback Vision", p).parent_region = mw.get_region("Space", p)
+
     if options.goal == Goal.option_song_of_the_universe:
         friend_list = [
             ("QM: Explore the Sixth Location", True),                                    # Solanum
